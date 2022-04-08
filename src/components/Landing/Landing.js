@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Button } from '@material-ui/core';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
+import Typewriter from "typewriter-effect";
 
 import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -68,9 +69,6 @@ function Landing() {
         [t.breakpoints.down("sm")]: {
           display: "none",
         },
-      },
-      h1tag: {
-        fontSize: "1.5rem",
       },
     }));
 
@@ -202,8 +200,21 @@ function Landing() {
             style={{ backgroundColor: theme.secondary }}
           >
             <div className="lcr--content" style={{ color: theme.tertiary }}>
-              <h6>{headerData.title}</h6>
-              <h1 className={classes.h1tag}>{headerData.name}</h1>
+              <h6>
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Full-Stack Web Developer",
+                      "Designer",
+                      "Writer"
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 60,
+                  }}
+                />
+              </h6>
+              <h1 style={{ fontSize: "40px" }}>{headerData.name}</h1>
               <p>{headerData.desciption}</p>
 
               <div className="lcr-buttonContainer">

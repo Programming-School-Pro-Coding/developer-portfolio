@@ -13,14 +13,17 @@ import {
   FaSass,
   FaReact,
   FaGitAlt,
+  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiGatsby,
   SiJavascript,
   SiGithub,
+  SiHashnode,
+  SiVercel,
 } from "react-icons/si";
-import { VscTerminalCmd } from 'react-icons/vsc';
+import { VscTerminalCmd, VscMarkdown } from "react-icons/vsc";
 import { MdDesignServices } from "react-icons/md";
 
 export const servicesData = [
@@ -30,15 +33,15 @@ export const servicesData = [
   //     icon: <BiShoppingBag/>
   // },
   {
-    id: 2,
+    id: 1,
     title: "Content Writing",
     icon: <BiPencil />,
   },
-  {
-    id: 3,
-    title: "Email Marketing",
-    icon: <AiOutlineMail />,
-  },
+  // {
+  //   id: 3,
+  //   title: "Email Marketing",
+  //   icon: <AiOutlineMail />,
+  // },
   // {
   //     id: 4,
   //     title: 'Internet Research',
@@ -51,7 +54,7 @@ export const servicesData = [
   // },
 
   {
-    id: 6,
+    id: 2,
     title: "Designing",
     icon: <MdDesignServices />,
   },
@@ -60,11 +63,11 @@ export const servicesData = [
   //     title: 'Pinterest Virtual Assistant',
   //     icon: <FaPinterest />
   // },
-  {
-    id: 9,
-    title: "Video Editing",
-    icon: <FaVideo />,
-  },
+  // {
+  //   id: 9,
+  //   title: "Video Editing",
+  //   icon: <FaVideo />,
+  // },
   // {
   //     id: 10,
   //     title: 'Data Entry',
@@ -76,27 +79,27 @@ export const servicesData = [
   //     icon: <AiFillAudio />
   // },
   {
-    id: 13,
+    id: 3,
     title: "Blog Posting",
     icon: <FaRegNewspaper />,
   },
   {
-    id: 14,
+    id: 4,
     title: "Sass",
     icon: <FaSass />,
   },
   {
-    id: 15,
+    id: 5,
     title: "React JS",
     icon: <FaReact />,
   },
   {
-    id: 16,
-    title: "TailwindCSS",
-    icon: <SiTailwindcss />,
+    id: 6,
+    title: "Markdown",
+    icon: <VscMarkdown />,
   },
   {
-    id: 17,
+    id: 7,
     title: "Next JS",
     icon: (
       <svg
@@ -111,29 +114,44 @@ export const servicesData = [
     ),
   },
   {
-    id: 18,
-    title: "Gatsby JS",
-    icon: <SiGatsby />,
+    id: 8,
+    title: "TailwindCSS",
+    icon: <SiTailwindcss />,
   },
   {
-    id: 19,
+    id: 9,
+    title: "Bootstrap",
+    icon: <FaBootstrap />,
+  },
+  // {
+  //   id: 8,
+  //   title: "Gatsby JS",
+  //   icon: <SiGatsby />,
+  // },
+  {
+    id: 10,
     title: "Vanilla JavaScript",
     icon: <SiJavascript />,
   },
   {
-    id: 20,
+    id: 11,
     title: "GitHub",
     icon: <SiGithub />,
   },
   {
-    id: 21,
+    id: 12,
     title: "Git",
     icon: <FaGitAlt />,
   },
   {
-    id: 22,
-    title: "Command Prompt and VS Code Terminal",
+    id: 13,
+    title: "Terminal",
     icon: <VscTerminalCmd />,
+  },
+  {
+    id: 14,
+    title: "Hashnode",
+    icon: <SiHashnode />,
   },
 ];
 

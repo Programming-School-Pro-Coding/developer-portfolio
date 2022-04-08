@@ -70,4 +70,3 @@ git remote add upstream https://github.com/hhhrrrttt222111/developer-portfolio.g
 ```bash
 git pull upstream master
 ```
-

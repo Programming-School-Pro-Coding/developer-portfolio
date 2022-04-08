@@ -47,7 +47,7 @@ function Portfolio() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="blog--header">
-            <h1 style={{ color: theme.primary, textAlign: "center", fontSize: "28.1px", width: "100%" }}>Website Templates</h1>
+            <h1 style={{ color: theme.primary, textAlign: "center", fontSize: "28.1px", transform: "translateY(25px)" }} className="main-title">Website Templates</h1>
           </div>
           <div className="blog--body">
             <div className="blog--bodyContainer">

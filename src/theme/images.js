@@ -45,6 +45,12 @@ import contactsRed from "../assets/svg/contacts/contactsRed.svg";
 import contactsYellow from "../assets/svg/contacts/contactsYellow.svg";
 import contactsNavy from "../assets/svg/contacts/contactsNavy.svg";
 
+
+import javascript from "../assets/png/JavaScript.png";
+import react from "../assets/png/React.png";
+import CSS3 from "../assets/png/css3.png";
+import Vercel from "../assets/png/vercel.png";
+
 export {
   blueThemegirl,
   blueThemeboy,
@@ -89,4 +95,8 @@ export {
   contactsNavy,
   expNavy,
   eduNavy,
+  javascript,
+  react,
+  CSS3,
+  Vercel
 };
