@@ -25,7 +25,7 @@ function Landing() {
 
     const useStyles = makeStyles((t) => ({
       socialIcon: {
-        color: "#555",
+        color: "#444",
       },
       resumeBtn: {
         color: theme.primary,
@@ -87,7 +87,7 @@ function Landing() {
                   href={socialsData.twitter}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} twitter`}
                 >
                   <FaTwitter aria-label="Twitter" className="landing--social" />
                 </a>
@@ -97,7 +97,7 @@ function Landing() {
                   href={socialsData.github}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} github`}
                 >
                   <FaGithub aria-label="GitHub" className="landing--social" />
                 </a>
@@ -107,7 +107,7 @@ function Landing() {
                   href={socialsData.linkedIn}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} linkedin`}
                 >
                   <FaLinkedinIn
                     aria-label="LinkedIn"
@@ -120,7 +120,7 @@ function Landing() {
                   href={socialsData.instagram}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} instagram`}
                 >
                   <FaInstagram
                     aria-label="Instagram"
@@ -133,7 +133,7 @@ function Landing() {
                   href={socialsData.blogger}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} blogger`}
                 >
                   <FaBloggerB
                     aria-label="Blogger"
@@ -146,7 +146,7 @@ function Landing() {
                   href={socialsData.youtube}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} youtube`}
                 >
                   <FaYoutube aria-label="YouTube" className="landing--social" />
                 </a>
@@ -166,7 +166,7 @@ function Landing() {
                   href={socialsData.stackOverflow}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} stackOverflow`}
                 >
                   <FaStackOverflow
                     aria-label="Stack Overflow"
@@ -179,7 +179,7 @@ function Landing() {
                   href={socialsData.codepen}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}
+                  className={`${classes.socialIcon} codepen`}
                 >
                   <FaCodepen aria-label="CodePen" className="landing--social" />
                 </a>

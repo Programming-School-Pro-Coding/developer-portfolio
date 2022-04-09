@@ -147,3 +147,39 @@ img{
     height: 100%;
   }
 }
+
+/* Start Socials */
+
+.twitter:hover {
+  color: #019DE5;
+}
+
+.youtube:hover {
+  color: #F60100;
+}
+
+.codepen:hover {
+  color: #030303;
+}
+
+.stackOverflow:hover {
+  color: #E6AE83;
+}
+
+.blogger:hover {
+  color: #F5531F;
+}
+
+.instagram:hover {
+  color: #C4339F;
+}
+
+.linkedin:hover {
+  color: #0077B0;
+}
+
+.github:hover {
+  color: #313131;
+}
+
+/* End Socials */

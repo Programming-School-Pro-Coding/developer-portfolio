@@ -54,11 +54,11 @@ iframe {
 .landing--social {
   font-size: 35px;
   margin: 0 1rem;
-  transition: all 0.7s;
+  transition: all 0.1s;
 }
 
 .landing--social:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2);
 }
 
 .landing--container-right {
