@@ -50,6 +50,9 @@
         font-size: 2.2rem;
         margin-top: -1.5rem;
     }
+    .switch-container {
+        right: 50px;
+    }
 }
 
 @media (max-width:800px) {
@@ -87,4 +90,10 @@
     .navbar--container > h1 {
         font-size: 1.5rem;
     }
+}
+
+.switch-container {
+    position: absolute;
+    right: 90px;
+    top: 26px;
 }

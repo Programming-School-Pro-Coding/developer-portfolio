@@ -13,6 +13,7 @@ import Logo from '../../assets/svg/Logo.svg'
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import CustomizedSwitch from "./CustomizedSwitch";
 
 function Navbar() {
     const { theme, setHandleDrawer } = useContext(ThemeContext);
@@ -136,6 +137,10 @@ function Navbar() {
           <h1 style={{ color: theme.secondary }}>
             {shortname(headerData.name)}
           </h1>
+
+          <div className='switch-container'>
+                    <CustomizedSwitch />    
+                </div>
 
           <IoMenuSharp
             className={classes.navMenu}

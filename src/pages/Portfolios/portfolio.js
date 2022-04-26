@@ -84,7 +84,7 @@ function PortfolioPage() {
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
-        <h1 style={{ color: theme.secondary }}>Web Templates</h1>
+        <h1 style={{ color: theme.secondary }}>Templates</h1>
         <a style={{ color: theme.secondary }} class="about-a" href={socialsData.github} target="_blank" rel="noreferrer">My Github</a>
       </div>
       <div className="blogPage--container">

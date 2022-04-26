@@ -5,7 +5,7 @@ export const socialsData = {
   instagram: "https://www.instagram.com/mohamedehab2463/",
   codepen: "https://codepen.io/programing-school",
   twitter: "https://twitter.com/Program39300266",
-  reddit: "https://www.reddit.com/user/",
+  reddit: "https://www.reddit.com/",
   blogger: "https://programing-school-blog.blogspot.com/",
   medium: "https://medium.com/@",
   stackOverflow: "https://stackoverflow.com/users/15508803/mohamed-ehab",
