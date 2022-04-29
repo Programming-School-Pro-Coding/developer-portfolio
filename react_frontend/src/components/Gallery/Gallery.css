@@ -1,0 +1,5 @@
+@media (min-width: 320px) {
+       .main-title {
+              transform: translateY(10px);
+       }
+}
