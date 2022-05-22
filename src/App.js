@@ -7,14 +7,13 @@ import {
 } from "react-router-dom";
 
 import { ThemeContext } from "./contexts/ThemeContext";
-import { Main, BlogPage, ProjectPage, PortfolioPage, Brand } from "./pages";
+import { Main, BlogPage, ProjectPage, PortfolioPage, NotFound } from "./pages";
 import { BackToTop } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";
 
 import "./App.css";
 
 function App() {
-
   const { theme } = useContext(ThemeContext);
 
   console.log(
@@ -36,9 +35,9 @@ function App() {
           <Route path="/blog" exact component={BlogPage} />
           <Route path="/projects" exact component={ProjectPage} />
           <Route path="/portfolio" exact component={PortfolioPage} />
-          <Route path="/brand" exact component={Brand} />
+          <Route path="/404" exact component={NotFound} />
 
-          <Redirect to="/" />
+          <Redirect to="/404" />
         </Switch>
       </Router>
       <BackToTop />
