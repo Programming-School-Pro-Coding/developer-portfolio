@@ -1,0 +1,2 @@
+- name: Vercel Deployment
+  uses: xmflsct/action-vercel-deployment@v0.5.3
