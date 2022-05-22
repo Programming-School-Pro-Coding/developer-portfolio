@@ -13,7 +13,10 @@ const SingleGallery = ({ id, Title, subTitle, Image }) => {
           <div>
             <span className="projects__subtitle">{subTitle}</span>
             <h3 className="projects__title">{Title}</h3>
-            <a href="web" className="projects__button button button__small">
+            <a
+              href={Image}
+              className="projects__button button button__small"
+            >
               <i className="ri-link"></i>
             </a>
           </div>
