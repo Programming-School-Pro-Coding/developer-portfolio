@@ -8,7 +8,7 @@ import {
 
 import { ThemeContext } from "./contexts/ThemeContext";
 import { Main, BlogPage, ProjectPage, PortfolioPage, NotFound } from "./pages";
-import { BackToTop } from "./components";
+import { BackToTop, Twitter } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";
 
 import "./App.css";
@@ -41,6 +41,7 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
+      <Twitter />
     </div>
   );
 }

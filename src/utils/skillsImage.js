@@ -75,7 +75,9 @@ import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
-import Node from '../assets/svg/skills/nodejs.svg'
+import Node from '../assets/svg/skills/nodejs.svg';
+import Sass from "../assets/png/Skills/sass.png";
+import Gatsby from "../assets/png/Skills/gatsby.png";
 
 
 export const skillsImage = (skill) => {
@@ -83,8 +85,12 @@ export const skillsImage = (skill) => {
     switch (skillID) {
         case 'gcp':
             return gcp;
-        case 'Node JS':
+        case 'node js':
             return Node;
+        case 'sass':
+            return Sass;
+        case 'gatsby js':
+            return Gatsby;
         case 'html':
             return html;
         case 'photoshop':

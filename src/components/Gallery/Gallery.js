@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import SingleGallery from "./SingleGallery/SingleGallery";
+import { makeStyles } from "@material-ui/core/styles";
 
 import { GalleryData } from "../../data/GalleryData";
 import "./Gallery.css";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const Gallery = () => {
+  const { theme } = useContext(ThemeContext);
+  const useStyles = makeStyles(() => ({
+    div: {
+      backgroundColor: theme.secondary,
+    },
+    mainTitle: {
+      color: theme.primary,
+    }
+  }));
+
+  const classes = useStyles();
   return (
-    <>
-      <h1 className="main-title">
+    <div className={classes.div}>
+      <h1 className={`main-title ${classes.mainTitle}`}>
         Gallery
       </h1>
       <div
@@ -25,7 +38,7 @@ const Gallery = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

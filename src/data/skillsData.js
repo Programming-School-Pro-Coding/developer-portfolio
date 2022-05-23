@@ -1,26 +1,32 @@
- export const skillsData = [
-   "HTML",
-   "Javascript",
-   "CSS",
-   "Figma",
-   "React",
-   "Next JS",
-   //  "Node JS",
-   "Microsoft Office",
-   "Adobe XD",
-   "Bootstrap",
-   "C#",
-   "Python",
-   "PHP",
-   "Git",
-   "Canva",
-   "Tailwind",
-   "Premiere Pro",
- ];
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Figma",
+  "React",
+  "Next JS",
+  "Node JS",
+  "Microsoft Office",
+  "Adobe XD",
+  "Bootstrap",
+  "C#",
+  "Python",
+  "PHP",
+  "Git",
+  "Canva",
+  "Tailwind",
+  "Premiere Pro",
+  "Markdown",
+  "PHP",
+  "Typescript",
+  "MongoDB",
+  "Wordpress",
+  "Sass",
+  "Gatsby JS"
+];
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 // Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
-
 
 // AVAILABLE SKILLS
 
@@ -76,7 +82,6 @@
     Figma
     Canva
     Ubuntu
-    Bootstrap
     MongoDB
     Tailwind
     ViteJS
@@ -103,4 +108,5 @@
     Tensorflow
     Webex
     Wordpress
+    Sass
 */

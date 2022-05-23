@@ -6,7 +6,7 @@ export const BRAND_NAME = "PGSM";
 export const SITE_NAME_MULTILINE = ["PGSM", "Conf"];
 export const SITE_NAME = `PGSM Conf`;
 export const META_DESCRIPTION =
-  "This is an open source portfolio that React.js developers can clone, deploy, and fully customize for his/her projects";
+  "This is an open source portfolio that React.js developers can clone, deploy, and fully customize for his/her portfolio(projects)";
 export const TWEET_TEXT = META_DESCRIPTION;
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
