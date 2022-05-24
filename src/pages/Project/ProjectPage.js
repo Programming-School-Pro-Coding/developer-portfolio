@@ -82,7 +82,7 @@ function ProjectPage() {
         className="projectPage-header"
         style={{ backgroundColor: theme.primary }}
       >
-        <Link href="/">
+        <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
         <h1 style={{ color: theme.secondary }}>Projects</h1>
@@ -106,7 +106,7 @@ function ProjectPage() {
             justifyContent="center"
           >
             {filteredRepos.map((repo) => (
-                <SingleProject repo={repo} theme={theme} />
+              <SingleProject repo={repo} theme={theme} />
             ))}
           </Grid>
         </div>
