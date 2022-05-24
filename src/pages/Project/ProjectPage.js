@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -9,25 +9,18 @@ import "./ProjectPage.css";
 import { SingleProject } from "../../components";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
-import { client, urlFor } from "../../client";
+import ProjectsData from "../../components/Projects/github_data/repositories.json";
 
 function ProjectPage() {
   const [search, setSearch] = useState("");
   const { theme } = useContext(ThemeContext);
-  const [projects, setProjects] = useState([]);
 
-  useEffect(() => {
-    const query = "*[_type == 'projects']";
-
-    client.fetch(query).then((data) => {
-      setProjects(data);
-    });
-  }, [setProjects]);
-
-  const filteredArticles = projects.filter((project) => {
-    const content = project.title + project.desc + project.uses;
+  const filteredRepos = ProjectsData.data.filter((project) => {
+    const content = project.name + project.description + project.languages.name;
     return content.toLowerCase().includes(search.toLowerCase());
   });
+
+  console.log(filteredRepos);
 
   const useStyles = makeStyles((t) => ({
     search: {
@@ -112,18 +105,8 @@ function ProjectPage() {
             alignItems="center"
             justifyContent="center"
           >
-            {filteredArticles.map((project) => (
-              <SingleProject
-                theme={theme}
-                key={project._id}
-                id={project._id}
-                name={project.title}
-                desc={project.desc}
-                tags={project.uses}
-                code={project.source}
-                demo={project.demo}
-                image={urlFor(project.mainImage)}
-              />
+            {filteredRepos.map((repo) => (
+                <SingleProject repo={repo} theme={theme} />
             ))}
           </Grid>
         </div>

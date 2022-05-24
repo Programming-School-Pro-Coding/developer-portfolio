@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -7,19 +7,10 @@ import { HiArrowRight } from "react-icons/hi";
 
 import "./Projects.css";
 import SingleProject from "./SingleProject/SingleProject";
-import { client, urlFor } from "../../client";
+import ProjectsData from './github_data/repositories.json';
 
 function Projects() {
   const { theme } = useContext(ThemeContext);
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const query = "*[_type == 'projects']";
-
-    client.fetch(query).then((data) => {
-      setProjects(data);
-    });
-  }, [setProjects]);
 
   const useStyles = makeStyles(() => ({
     viewAllBtn: {
@@ -52,7 +43,7 @@ function Projects() {
 
   return (
     <>
-      {projects.length > 0 && (
+      {ProjectsData.data.length > 0 && (
         <div
           className="projects"
           id="projects"
@@ -68,22 +59,12 @@ function Projects() {
           </div>
           <div className="projects--body">
             <div className="projects--bodyContainer">
-              {projects.slice(0, 3).map((project) => (
-                <SingleProject
-                  theme={theme}
-                  key={project._id}
-                  id={project._id}
-                  name={project.title}
-                  desc={project.desc}
-                  tags={project.uses}
-                  code={project.source}
-                  demo={project.demo}
-                  image={urlFor(project.mainImage)}
-                />
-              ))}
+              {ProjectsData.data.slice(0, 3).map((repo) => {
+                return <SingleProject repo={repo} theme={theme} />;
+              })}
             </div>
 
-            {projects.length > 3 && (
+            {ProjectsData.data.length > 3 && (
               <div className="projects--viewAll">
                 <Link to="/projects">
                   <button className={classes.viewAllBtn}>

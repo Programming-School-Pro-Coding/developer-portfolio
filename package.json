@@ -1,8 +1,10 @@
 {
+  "type": "module",
   "name": "developer-portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.6.5",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.2",
@@ -15,12 +17,16 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "apollo-boost": "^0.4.9",
     "axios": "^0.21.1",
     "date-fns": "^2.28.0",
+    "graphql": "^16.5.0",
     "markdown-to-jsx": "^7.1.7",
     "moment": "^2.29.3",
+    "node-fetch": "^2.6.7",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^17.0.2",
     "react-fast-marquee": "^1.2.1",
     "react-helmet": "^6.1.0",
@@ -39,7 +45,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node src\\components\\Projects\\fetch && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -63,6 +69,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^3.2.1",
     "@types/styled-components": "^5.1.25",
     "autoprefixer": "^10.4.4",
     "gh-pages": "^3.2.3"
