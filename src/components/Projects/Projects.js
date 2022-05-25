@@ -12,7 +12,9 @@ import ProjectsData from './github_data/repositories.json';
 import IssueCard from "./IssueCard/IssueCard";
 import issuesData from "../Projects/github_data/issues.json";
 import PullRequestCard from './PullRequestCard/PullRequestCard';
-import pullRequestsData from './github_data/pull_requests.json'
+import pullRequestsData from './github_data/pull_requests.json';
+import OrganizationList from './OrganizationList/OrganizationList'
+import OrganizationsData from './github_data/organizations.json'
 
 function Projects() {
   const { theme } = useContext(ThemeContext);
@@ -112,6 +114,19 @@ function Projects() {
               </Link>
             </div>
           )}
+          <div id="organizations">
+            <div className="organizations-header-div">
+              <Fade bottom duration={2000} distance="20px">
+                <h1
+                  className="main-title0"
+                  style={{ color: theme.primary }}
+                >
+                  Contributed Organizations
+                </h1>
+              </Fade>
+            </div>
+            <OrganizationList logos={OrganizationsData["data"]} />
+          </div>
         </div>
       )}
     </>

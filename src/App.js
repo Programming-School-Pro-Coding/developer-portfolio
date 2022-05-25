@@ -13,7 +13,6 @@ import {
   ProjectPage,
   PortfolioPage,
   NotFound,
-  pullRequests,
 } from "./pages";
 import { BackToTop, Twitter } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";

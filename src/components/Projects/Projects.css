@@ -92,6 +92,11 @@
     justify-content: center;
     gap: 3.5rem; */
     width: 100%;
+   
+    text-align: center;
+}
+
+.organizations-header-div {
     text-align: center;
 }
 
