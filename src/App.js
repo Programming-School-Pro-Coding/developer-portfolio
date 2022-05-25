@@ -7,7 +7,14 @@ import {
 } from "react-router-dom";
 
 import { ThemeContext } from "./contexts/ThemeContext";
-import { Main, BlogPage, ProjectPage, PortfolioPage, NotFound } from "./pages";
+import {
+  Main,
+  BlogPage,
+  ProjectPage,
+  PortfolioPage,
+  NotFound,
+  pullRequests,
+} from "./pages";
 import { BackToTop, Twitter } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";
 

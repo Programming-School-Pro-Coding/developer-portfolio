@@ -2,7 +2,9 @@ import fetch from "node-fetch";
 import fs from "fs";
 
 const openSource = {
-  githubConvertedToken: process.env.GITHUB_ACCESS_TOKEN,
+  githubConvertedToken:
+    process.env
+      .GITHUB_ACCESS_TOKEN,
   githubUserName: "Programming-School-Pro-Coding",
 };
 
@@ -10,7 +12,7 @@ const query_pr = {
   query: `
 	query {
 	  user(login: "${openSource.githubUserName}"){
-	    pullRequests(last: 100, orderBy: {field: CREATED_AT, direction: DESC}){
+	    pullRequests(last: 16, orderBy: {field: CREATED_AT, direction: DESC}){
       totalCount
       nodes{
         id

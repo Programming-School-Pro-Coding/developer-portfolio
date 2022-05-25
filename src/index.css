@@ -4,13 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-  font-family: 'BestermindRegular';
-  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf'); 
-  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), 
-       url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
+  font-family: "BestermindRegular";
+  src: url("./assets/fonts/Bestermind/BestermindRegular.ttf");
+  src: url("./assets/fonts/Bestermind/BestermindRegular.ttf")
+      format("embedded-opentype"),
+    url("./assets/fonts/Bestermind/BestermindRegular.ttf") format("truetype");
 }
 
-* { 
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -22,32 +23,29 @@ a {
   text-decoration: none;
 }
 
-
 /* scrollBar */
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #555;
+  background: #555;
 }
 ::-webkit-scrollbar-thumb {
-    background: #555;
+  background: #555;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-img{
-  -webkit-touch-callout: none; 
-    -webkit-user-select: none;
-     -khtml-user-select: none; 
-       -moz-user-select: none;
-        -ms-user-select: none; 
-            user-select: none; 
-
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
 
 @media screen and (max-width: 400px) {
   body {
@@ -55,18 +53,18 @@ img{
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-    body {
-      overflow-x: hidden;
-    }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .experience-details h6 {
   color: #000061;
 }
 
-.main-title {
+.main-title,
+.secondary-title {
   /* text-transform: uppercase; */
   margin: 0 auto 80px;
   border: 2px solid white;
@@ -77,11 +75,12 @@ img{
   position: relative;
   z-index: 1;
   transition: 0.3s;
-  color: #000024;
 }
 
 .main-title::before,
-.main-title::after {
+.main-title::after,
+.secondary-title::before,
+.secondary-title::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -93,30 +92,47 @@ img{
   border-radius: 10px;
 }
 
-.main-title::before {
+.main-title::before,
+.secondary-title::before {
   left: -30px;
 }
 
-.main-title::after {
+.main-title::after,
+.secondary-title::after {
   right: -30px;
 }
 
-.main-title:hover::before {
+.main-title:hover::before,
+.secondary-title:hover::before {
   z-index: -1;
   animation: left-move 0.5s linear forwards;
 }
 
-.main-title:hover::after {
+.main-title:hover::after,
+.secondary-title:hover::after {
   z-index: -1;
   animation: right-move 0.5s linear forwards;
 }
 
-.main-title:hover {
+.main-title:hover,
+.secondary-title:hover {
   color: white;
   border: 2px solid black;
   border-radius: 5px;
   transition-delay: 0.5s;
   background: #2196f3;
+}
+
+.secondary-title {
+  margin: 0 auto 80px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
 }
 
 @keyframes left-move {
@@ -152,11 +168,11 @@ img{
 /* Start Socials */
 
 .twitter:hover {
-  color: #019DE5;
+  color: #019de5;
 }
 
 .youtube:hover {
-  color: #F60100;
+  color: #f60100;
 }
 
 .codepen:hover {
@@ -164,19 +180,19 @@ img{
 }
 
 .stackOverflow:hover {
-  color: #E6AE83;
+  color: #e6ae83;
 }
 
 .blogger:hover {
-  color: #F5531F;
+  color: #f5531f;
 }
 
 .instagram:hover {
-  color: #C4339F;
+  color: #c4339f;
 }
 
 .linkedin:hover {
-  color: #0077B0;
+  color: #0077b0;
 }
 
 .github:hover {

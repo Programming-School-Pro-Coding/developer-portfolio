@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+import { Fade } from "react-reveal";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { HiArrowRight } from "react-icons/hi";
@@ -8,6 +9,10 @@ import { HiArrowRight } from "react-icons/hi";
 import "./Projects.css";
 import SingleProject from "./SingleProject/SingleProject";
 import ProjectsData from './github_data/repositories.json';
+import IssueCard from "./IssueCard/IssueCard";
+import issuesData from "../Projects/github_data/issues.json";
+import PullRequestCard from './PullRequestCard/PullRequestCard';
+import pullRequestsData from './github_data/pull_requests.json'
 
 function Projects() {
   const { theme } = useContext(ThemeContext);
@@ -75,6 +80,38 @@ function Projects() {
               </div>
             )}
           </div>
+          <div className="issue-header">
+            <h1 className="secondary-title" style={{ color: theme.primary }}>
+              Issues
+            </h1>
+          </div>
+          <div className="issues-body-div">
+            {issuesData["data"].map((issue) => {
+              return <IssueCard issue={issue} />;
+            })}
+          </div>
+          <div className="pull-requests-header-div">
+            <Fade bottom duration={2000} distance="20px">
+              <h1 className="secondary-title" style={{ color: theme.primary }}>
+                Pull Requests
+              </h1>
+            </Fade>
+          </div>
+          <div className="pull-request-body-div">
+            {pullRequestsData["data"].map((pullRequest) => {
+              return <PullRequestCard pullRequest={pullRequest} />;
+            })}
+          </div>
+          {ProjectsData.data.length > 3 && (
+            <div className="projects--viewAll">
+              <Link to="/pullrequests">
+                <button className={classes.viewAllBtn}>
+                  View All
+                  <HiArrowRight className={classes.viewArr} />
+                </button>
+              </Link>
+            </div>
+          )}
         </div>
       )}
     </>
