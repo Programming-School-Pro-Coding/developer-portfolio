@@ -127,7 +127,7 @@ const query_repositories = {
   query: `
   query { 
 	  user(login: "Programming-School-Pro-Coding") { 
-	    repositories(first: 100) {
+	    repositories(last: 100) {
 	      totalCount
 	      nodes{
 	        ... on Repository{
