@@ -1363,6 +1363,13 @@
   "resolved" "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.2.tgz"
   "version" "1.1.2"
 
+"@giscus/react@^2.0.5":
+  "integrity" "sha512-QTK4Buv+TqSJx9wovjANW130sFxnZ4/xtm2fEZifNSGaEVeT0AqfRM9Roe6n8OaJhBz5hZnlUpFWUZeHnTuu+A=="
+  "resolved" "https://registry.npmjs.org/@giscus/react/-/react-2.0.5.tgz"
+  "version" "2.0.5"
+  dependencies:
+    "giscus" "^1.0.5"
+
 "@graphql-typed-document-node/core@^3.1.1":
   "integrity" "sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg=="
   "resolved" "https://registry.npmjs.org/@graphql-typed-document-node/core/-/core-3.1.1.tgz"
@@ -1605,6 +1612,11 @@
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
     "chalk" "^4.0.0"
+
+"@lit/reactive-element@^1.3.0":
+  "integrity" "sha512-A2e18XzPMrIh35nhIdE4uoqRzoIpEU5vZYuQN4S3Ee1zkGdYC27DP12pewbw/RLgPHzaE4kx/YqxMzebOpm0dA=="
+  "resolved" "https://registry.npmjs.org/@lit/reactive-element/-/reactive-element-1.3.2.tgz"
+  "version" "1.3.2"
 
 "@material-ui/core@^4.12.2":
   "integrity" "sha512-Q1npB8V73IC+eV2X6as+g71MpEGQwqKHUI2iujY62npk35V8nMx/bUXAHjv5kKG1BZ8s8XUWoG6s/VkjYPjjQA=="
@@ -2338,6 +2350,11 @@
   "version" "5.14.1"
   dependencies:
     "@types/jest" "*"
+
+"@types/trusted-types@^2.0.2":
+  "integrity" "sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg=="
+  "resolved" "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.2.tgz"
+  "version" "2.0.2"
 
 "@types/uglify-js@*":
   "integrity" "sha512-O3MmRAk6ZuAKa9CHgg0Pr0+lUOqoMLpc9AS4R8ano2auvsg7IE8syF3Xh/NPr26TWklxYcqoEEFdzLLs1fV9PQ=="
@@ -6368,6 +6385,13 @@
     "fs-extra" "^8.1.0"
     "globby" "^6.1.0"
 
+"giscus@^1.0.5":
+  "integrity" "sha512-jg+4qUtyn2r9gCZJthbgPn/hLaoZAcZVhWx6d7+TYrrojMjAltrlSzYdsL++4iutVmGEYktp+nUJn2rQgZzvTg=="
+  "resolved" "https://registry.npmjs.org/giscus/-/giscus-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "lit" "^2.2.4"
+
 "glob-parent@^3.1.0":
   "integrity" "sha1-nmr2KZ2NO9K9QEMIMr0RPfkGxa4="
   "resolved" "https://registry.npmjs.org/glob-parent/-/glob-parent-3.1.0.tgz"
@@ -8265,6 +8289,30 @@
   "integrity" "sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA="
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz"
   "version" "1.1.6"
+
+"lit-element@^3.2.0":
+  "integrity" "sha512-HbE7yt2SnUtg5DCrWt028oaU4D5F4k/1cntAFHTkzY8ZIa8N0Wmu92PxSxucsQSOXlODFrICkQ5x/tEshKi13g=="
+  "resolved" "https://registry.npmjs.org/lit-element/-/lit-element-3.2.0.tgz"
+  "version" "3.2.0"
+  dependencies:
+    "@lit/reactive-element" "^1.3.0"
+    "lit-html" "^2.2.0"
+
+"lit-html@^2.2.0":
+  "integrity" "sha512-e56Y9V+RNA+SGYsWP2DGb/wad5Ccd3xUZYjmcmbeZcnc0wP4zFQRXeXn7W3bbfBekmHDK2dOnuYNYkg0bQjh/w=="
+  "resolved" "https://registry.npmjs.org/lit-html/-/lit-html-2.2.5.tgz"
+  "version" "2.2.5"
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+"lit@^2.2.4":
+  "integrity" "sha512-Ln463c0xJZfzVxBcHddNvFQQ8Z22NK7KgNmrzwFF1iESHUud412RRExzepj18wpTbusgwoTnOYuoTpo9uyNBaQ=="
+  "resolved" "https://registry.npmjs.org/lit/-/lit-2.2.5.tgz"
+  "version" "2.2.5"
+  dependencies:
+    "@lit/reactive-element" "^1.3.0"
+    "lit-element" "^3.2.0"
+    "lit-html" "^2.2.0"
 
 "load-json-file@^4.0.0":
   "integrity" "sha1-L19Fq5HjMhYjT9U62rZo607AmTs="

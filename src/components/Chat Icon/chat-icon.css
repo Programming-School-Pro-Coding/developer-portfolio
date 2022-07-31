@@ -1,13 +1,13 @@
-.Twitter {
+.chatIcon {
     position: fixed; 
-    left: 10px;
-    bottom: 60px;
+    left: -15px;
+    top: 10px;
     height: 30px;
     font-size: 3rem;
     z-index: 999;
 }
 
-.Twitter a {
+.chatIcon button {
     outline: none;
     border: none;
     cursor: pointer;
@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .Twitter { 
+    .chatIcon { 
         left: -10px;
         bottom: 50px;
         font-size: 2.75rem;

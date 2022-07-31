@@ -21,3 +21,4 @@ export { default as Gallery } from "./Gallery/Gallery";
 export { default as BackToTop } from "./BackToTop/BackToTop";
 export { default as Twitter } from "./Twitter/twitter";
 export { default as banner } from "./banner/banner";
+export { default as ChatIcon } from "./Chat Icon/chat-icon";

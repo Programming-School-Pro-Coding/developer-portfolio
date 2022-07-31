@@ -1,26 +1,23 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
 } from "react-router-dom";
+import Giscus from "@giscus/react";
+import { MdClose } from "react-icons/md";
 
 import { ThemeContext } from "./contexts/ThemeContext";
-import {
-  Main,
-  BlogPage,
-  ProjectPage,
-  PortfolioPage,
-  NotFound,
-} from "./pages";
-import { BackToTop, Twitter } from "./components";
+import { Main, BlogPage, ProjectPage, PortfolioPage, NotFound } from "./pages";
+import { BackToTop, Twitter, ChatIcon } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";
 
 import "./App.css";
 
 function App() {
   const { theme } = useContext(ThemeContext);
+  const [showComment, setShowComment] = useState(false);
 
   console.log(
     "%cDEVELOPER PORTFOLIO",
@@ -48,6 +45,36 @@ function App() {
       </Router>
       <BackToTop />
       <Twitter />
+      {<ChatIcon onclickfunc={() => setShowComment(true)} />}
+      {showComment && (
+        <div className="play-details-comments">
+          <div className="comments-header">
+            <h3 className="header-title">Comments</h3>
+            <button
+              className="header-action"
+              onClick={() => setShowComment(false)}
+            >
+              <MdClose size={24} className="icon" />
+            </button>
+          </div>
+          <div className="comments-body">
+            <Giscus
+              id="comment-id"
+              repo={process.env.REACT_APP_GISCUS_PROJECT_REPO}
+              repoId={process.env.REACT_APP_GISCUS_PROJECT_REPO_ID}
+              category={process.env.REACT_APP_GISCUS_DISCUSSION_CATEGORY_NAME}
+              categoryId={process.env.REACT_APP_GISCUS_DISCUSSION_CATEGORY_ID}
+              mapping="Feedback for The Portfolio"
+              reactionsEnabled="1"
+              emitMetadata="0"
+              inputPosition="top"
+              theme="dark"
+              lang="en"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -6,5 +6,5 @@ export const headerData = {
     title: "Web Developer and Content Creator",
     desciption:"Hello I am A Web Developer And Content Creator \n I made many Website \n I have 3 years of exprerience",
     image: logo,
-    resumePdf: resume
+    resumePdf: 'https://resume.showwcase.com/programmming-school.pdf'
 }
