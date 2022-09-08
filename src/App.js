@@ -44,37 +44,6 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
-      <Twitter />
-      {<ChatIcon onclickfunc={() => setShowComment(true)} />}
-      {showComment && (
-        <div className="play-details-comments">
-          <div className="comments-header">
-            <h3 className="header-title">Comments</h3>
-            <button
-              className="header-action"
-              onClick={() => setShowComment(false)}
-            >
-              <MdClose size={24} className="icon" />
-            </button>
-          </div>
-          <div className="comments-body">
-            <Giscus
-              id="comment-id"
-              repo={process.env.REACT_APP_GISCUS_PROJECT_REPO}
-              repoId={process.env.REACT_APP_GISCUS_PROJECT_REPO_ID}
-              category={process.env.REACT_APP_GISCUS_DISCUSSION_CATEGORY_NAME}
-              categoryId={process.env.REACT_APP_GISCUS_DISCUSSION_CATEGORY_ID}
-              mapping="Feedback for The Portfolio"
-              reactionsEnabled="1"
-              emitMetadata="0"
-              inputPosition="top"
-              theme="dark"
-              lang="en"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
