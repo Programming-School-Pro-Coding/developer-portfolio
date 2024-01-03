@@ -21,9 +21,9 @@ import {
 
 
 export const themeData = {
-  theme: orangeThemeDark,
-  defaultTheme: orangeThemeDark,
-  secondaryTheme: orangeThemeLight,
+  theme: purpleThemeLight,
+  defaultTheme: purpleThemeLight,
+  secondaryTheme: purpleThemeLight,
 };
 
 
